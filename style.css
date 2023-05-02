@@ -1,0 +1,17 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  background-color: orange;
+  color: rgb(23, 21, 21);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.nav a {
+  margin: 3rem;
+  text-decoration: none;
+}
