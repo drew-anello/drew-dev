@@ -13,5 +13,10 @@ nav {
 
 .nav a {
   margin: 3rem;
-  text-decoration: none;
+  text-decoration: none; 
+  font-size: 1.25rem;
 }
+ .nav a:hover{
+  color: rgb(116, 105, 88);
+}
+
