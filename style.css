@@ -1,8 +1,23 @@
+@font-face {
+  font-family: circular;
+  src: url(./assets/fonts/Circular/CircularStd-Medium.otf);
+  font-weight: normal;
+  font-size: normal;
+}
+@font-face {
+  font-family: Circular-Nav;
+  src: url(./assets/fonts/Circular/CircularStd-Black.otf);
+  font-weight: normal;
+  font-size: normal;
+}
+
 * {
   margin: 0%;
   padding: 0%;
   background-color: orange;
   color: rgb(23, 21, 21);
+  font-family: circular;
+  
 }
 
 nav {
@@ -14,9 +29,15 @@ nav {
 .nav a {
   margin: 3rem;
   text-decoration: none; 
-  font-size: 1.25rem;
+  font-size: 2vh;
+  font-family: Circular-Nav;
 }
  .nav a:hover{
   color: rgb(116, 105, 88);
 }
 
+.about p {
+  margin: 2%;
+  padding: 2%;
+  font-size: 2vh;
+}
