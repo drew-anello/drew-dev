@@ -23,10 +23,16 @@
 .nav-wrap {
   justify-content: center;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 nav {
   margin-top: 2%;
+  position: fixed;
 }
 
 .nav a {
@@ -40,6 +46,9 @@ nav {
 
 .nav a:hover {
   color: rgb(116, 105, 88);
+}
+.nav-wrap.hide {
+  visibility: hidden;
 }
 
 .about {
