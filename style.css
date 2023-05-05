@@ -1,3 +1,4 @@
+/* fonts */
 @font-face {
   font-family: circular;
   src: url(./assets/fonts/Circular/CircularStd-Medium.otf);
@@ -11,7 +12,7 @@
   font-weight: normal;
   font-size: normal;
 }
-
+/* body */
 * {
   margin: 0%;
   padding: 0%;
@@ -20,6 +21,11 @@
   font-family: circular;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
+/* nav */
 .nav-wrap {
   justify-content: center;
   display: flex;
@@ -47,6 +53,7 @@ nav {
   color: rgb(116, 105, 88);
 }
 
+/* about */
 
 .about {
   margin-top: 5%;
@@ -77,6 +84,8 @@ nav {
   font-size: 2vh;
 }
 
+
+/* work */
 .work {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -172,10 +181,11 @@ nav {
   color: black;
 }
 
-.tech h1 {
+/* tech I use */
+
+.tech h2 {
   display: flex;
   justify-content: center;
-  font-size: 5vh;
   margin-top: 2%;
   margin-right: 2%;
   margin-left: 2%;
@@ -195,6 +205,61 @@ nav {
   height: 20vh;
 }
 
+/* resume */
+
+.resume {
+  margin: 4%;
+  padding: 4%;
+}
+.resume h2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.downloadwrapper{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+.downloadwrapper a {
+  display: inline-block;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.downloadwrapper span {
+  background-color: black;
+  color: white; 
+}
+.hidden {
+  color: transparent;
+}
+.downloadwrapper a:hover {
+  background-color: white;
+  color: black;
+}
+
+#newTab a:hover {
+  visibility: hidden;
+}
+
+.message {
+  background-color: white;
+  color: black;
+}
+
+
+.tab:hover span {
+  display: none
+}
+
+.tab:hover:before {
+  content: ""
+}
+/* media queries */
 @media only screen and (max-width: 768px) {
   .nav.fixed {
     visibility: hidden;
@@ -218,6 +283,12 @@ nav {
   .tooltip {
     display: none;
   }
-
+  .languages {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .languages img {
+    height: 10vh; /* Adjust this value to your preference */
+  }
 
 }
