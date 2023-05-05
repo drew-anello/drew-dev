@@ -242,10 +242,6 @@ nav {
   color: black;
 }
 
-#newTab a:hover {
-  visibility: hidden;
-}
-
 .message {
   background-color: white;
   color: black;
@@ -289,6 +285,12 @@ nav {
   }
   .languages img {
     height: 10vh; /* Adjust this value to your preference */
+  }
+  .tab span {
+    display: block;
+  }
+  .tab:hover:before {
+    display: none;
   }
 
 }
