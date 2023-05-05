@@ -286,11 +286,5 @@ nav {
   .languages img {
     height: 10vh; /* Adjust this value to your preference */
   }
-  .tab span {
-    display: block;
-  }
-  .tab:hover:before {
-    display: none;
-  }
 
 }
