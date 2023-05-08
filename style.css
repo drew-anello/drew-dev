@@ -228,6 +228,7 @@ nav {
   text-decoration: none;
   border-radius: 5px;
   margin-right: 1em;
+  margin-bottom: 4%;
 }
 
 .downloadwrapper span {
@@ -254,6 +255,77 @@ nav {
 
 .tab:hover:before {
   content: ""
+}
+.exped {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+.expdetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px; /* add some space between the two divs */
+}
+
+.date {
+  margin-bottom: 5px;
+}
+
+h3, h4, p {
+  margin: 0;
+}
+
+.contact h2 {
+  text-align: center;
+}
+.contact {
+  margin-bottom: 10%;
+}
+.contact h5 {
+  margin-top: 5%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vh;
+  height: 10vh;
+  margin: 5vh;
+  text-decoration: none;
+}
+.meeting span {
+  visibility: hidden;
+  margin-top: 4%;
+  text-align: center;
+}
+.meeting:hover span {
+  visibility: visible; 
+}
+.meeting:hover img {
+  opacity: .2;
+}
+.icons a img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+
+}
+.year {
+  text-align: center;
+  margin-bottom: 4%;
 }
 /* media queries */
 @media only screen and (max-width: 768px) {
@@ -285,6 +357,24 @@ nav {
   }
   .languages img {
     height: 10vh; /* Adjust this value to your preference */
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons a {
+    width: 25vw;
+    height: 25vw;
+    margin: 5vw;
   }
 
 }
